@@ -1,39 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Features
-  Company
-  Careers
-  About
+    <link rel="stylesheet" href="style.css" />
 
-  Login
-  Register
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Make remote work
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topBar flex">
+      <div class="logoBox">
+        <img src="images/logo.svg" alt="snap" class="logoImg" />
+      </div>
+      <nav class="topBarNav mainNav flex">
+        <ul class="mainNavList flex desktopList hidden">
+          <li class="navLi featureLi">
+            <a href="#" class="navLink"
+              >Features
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="^"
+                class="arrowIcon icon"
+            /></a>
+          </li>
+          <li class="navLi companyLi">
+            <a href="#" class="navLink"
+              >Company
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="^"
+                class="arrowIcon icon"
+            /></a>
+          </li>
+          <li class="navLi careersLi">
+            <a href="#" class="navLink">Careers</a>
+          </li>
+          <li class="navLi aboutLi">
+            <a href="#" class="navLink">About</a>
+          </li>
+        </ul>
+        <ul class="userToolsList flex desktopList hidden">
+          <li class="navLi loginLi">
+            <a href="#" class="navLink">Login</a>
+          </li>
+          <li class="navLi registerLi">
+            <button class="btn registerBtn">Register</button>
+          </li>
+        </ul>
+        <img src="images/icon-menu.svg" alt="menu" class="menuIcon" />
+        <div class="mobileMenu flex hidden"></div>
+      </nav>
+    </header>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+    <main class="mainSite">
+      <div class="heroSection grid">
+        <div class="copyBox flex" id="copyContainer">
+          <h1 class="mainTitle">Make remote work</h1>
+          <p class="description">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn learnMoreBtn">Learn more</button>
+          <div class="clientsBox">
+            <img
+              src="images/client-databiz.svg"
+              alt="databiz client"
+              class="clientImg"
+            />
+            <img
+              src="images/client-audiophile.svg"
+              alt="audiophile client"
+              class="clientImg"
+            />
+            <img
+              src="images/client-meet.svg"
+              alt="meet client"
+              class="clientImg"
+            />
+            <img
+              src="images/client-maker.svg"
+              alt="maker client"
+              class="clientImg"
+            />
+          </div>
+        </div>
+        <div class="artBox flex" id="artContainer">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="images/image-hero-mobile.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="images/image-hero-desktop.png"
+            />
+            <img
+              src="images/image-hero-mobile.png"
+              alt="Man working on laptop remotely."
+            />
+          </picture>
+        </div>
+      </div>
+    </main>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!--
+      <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    -->
+  </body>
 </html>
