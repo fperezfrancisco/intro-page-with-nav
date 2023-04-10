@@ -119,13 +119,14 @@ header {
 nav {
   width: 100%;
   align-items: center;
-  justify-content: space-between;
-  padding: 0px 3rem;
+  justify-content: flex-end;
+  padding: 0px 1rem;
   font-size: 14px;
 }
 
 .menuIcon {
   max-height: 40px;
+  cursor: pointer;
 }
 
 .desktopList {
@@ -134,6 +135,7 @@ nav {
 
 .mainNavList,
 .userToolsList {
+  display: none;
   align-items: center;
   column-gap: 2rem;
 }
@@ -303,6 +305,19 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
+  .mainNavList,
+  .userToolsList {
+    display: flex;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
   .heroSection {
     max-width: 1000px;
     grid-template-columns: minmax(300px, 500px) minmax(400px, 1fr);
@@ -332,5 +347,11 @@ nav {
 
   .artBox {
     grid-column: 2;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  nav {
+    padding: 0px 3rem;
   }
 }
