@@ -48,7 +48,35 @@
                 src="images/icon-arrow-down.svg"
                 alt="^"
                 class="arrowIcon icon"
-            /></a>
+                id="featureArrowDown"
+              />
+              <img
+                src="images/icon-arrow-up.svg"
+                alt="^"
+                class="arrowIcon icon hidden arrowUp"
+                id="featureArrowUp"
+              />
+            </a>
+            <div class="featuresDropDown flex hidden">
+              <ul class="featuresList flex">
+                <li class="navLi subLi flex">
+                  <img src="./images/icon-todo.svg" alt="todo" />
+                  <span class="subLiTitle">Todo List</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <img src="./images/icon-calendar.svg" alt="calander" />
+                  <span class="subLiTitle">Calander</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <img src="./images/icon-reminders.svg" alt="reminders" />
+                  <span class="subLiTitle">Reminders</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <img src="./images/icon-planning.svg" alt="planning" />
+                  <span class="subLiTitle">Planning</span>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navLi companyLi">
             <a href="#" class="navLink"
@@ -57,7 +85,26 @@
                 src="images/icon-arrow-down.svg"
                 alt="^"
                 class="arrowIcon icon"
+                id="companyArrowDown" />
+              <img
+                src="images/icon-arrow-up.svg"
+                alt="^"
+                class="arrowIcon icon arrowUp hidden"
+                id="companyArrowUp"
             /></a>
+            <div class="companyDropDown flex hidden">
+              <ul class="companyList flex">
+                <li class="navLi subLi flex">
+                  <span class="subLiTitle">History</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <span class="subLiTitle">Our Team</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <span class="subLiTitle">Blog</span>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navLi careersLi">
             <a href="#" class="navLink">Careers</a>
@@ -139,5 +186,6 @@
     </div>
 
     -->
+    <script src="script.js"></script>
   </body>
 </html>
