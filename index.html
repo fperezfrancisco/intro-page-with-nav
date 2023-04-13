@@ -35,6 +35,7 @@
     </style>
   </head>
   <body>
+    <div class="overlay"></div>
     <header class="topBar flex">
       <div class="logoBox">
         <img src="images/logo.svg" alt="snap" class="logoImg" />
@@ -121,9 +122,97 @@
             <button class="btn registerBtn">Register</button>
           </li>
         </ul>
-        <img src="images/icon-menu.svg" alt="menu" class="menuIcon" />
-        <div class="mobileMenu flex hidden"></div>
+        <img src="images/icon-menu.svg" alt="menu" class="menuIcon menuOpen" />
       </nav>
+      <div class="mobileNav">
+        <img
+          src="./images/icon-close-menu.svg"
+          alt="Close"
+          class="mobileCloseBtn"
+        />
+
+        <ul class="navList flex mobileNavList">
+          <li class="navLi featureLi" id="mobileFeatureLi">
+            <a href="#" class="navLink"
+              >Features
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="^"
+                class="arrowIcon icon"
+                id="featureArrowDownMobile"
+              />
+              <img
+                src="images/icon-arrow-up.svg"
+                alt="^"
+                class="arrowIcon icon hidden arrowUp"
+                id="featureArrowUpMobile"
+              />
+            </a>
+            <div class="featuresDropDownMobile flex hidden">
+              <ul class="featuresList flex">
+                <li class="navLi subLi flex">
+                  <img src="./images/icon-todo.svg" alt="todo" />
+                  <span class="subLiTitle">Todo List</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <img src="./images/icon-calendar.svg" alt="calander" />
+                  <span class="subLiTitle">Calander</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <img src="./images/icon-reminders.svg" alt="reminders" />
+                  <span class="subLiTitle">Reminders</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <img src="./images/icon-planning.svg" alt="planning" />
+                  <span class="subLiTitle">Planning</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navLi companyLi" id="mobileCompanyLi">
+            <a href="#" class="navLink"
+              >Company
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="^"
+                class="arrowIcon icon"
+                id="companyArrowDownMobile" />
+              <img
+                src="images/icon-arrow-up.svg"
+                alt="^"
+                class="arrowIcon icon arrowUp hidden"
+                id="companyArrowUpMobile"
+            /></a>
+            <div class="companyDropDownMobile flex hidden">
+              <ul class="companyList flex">
+                <li class="navLi subLi flex">
+                  <span class="subLiTitle">History</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <span class="subLiTitle">Our Team</span>
+                </li>
+                <li class="navLi subLi flex">
+                  <span class="subLiTitle">Blog</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navLi careersLi">
+            <a href="#" class="navLink">Careers</a>
+          </li>
+          <li class="navLi aboutLi">
+            <a href="#" class="navLink">About</a>
+          </li>
+        </ul>
+        <ul class="userToolsList flex mobileList">
+          <li class="navLi loginLi">
+            <a href="#" class="navLink">Login</a>
+          </li>
+          <li class="navLi registerLi">
+            <button class="btn registerBtn">Register</button>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="mainSite">
